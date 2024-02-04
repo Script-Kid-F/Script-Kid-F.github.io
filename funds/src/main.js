@@ -9,7 +9,7 @@ import 'element-plus/dist/index.css'
 import Axios from './http'
 const app = createApp(App)
 // 给 axios 设置请求根路径
-Axios.defaults.baseURL = 'http://localhost:8888/api/'
+Axios.defaults.baseURL = '/api'
 app.config.globalProperties.$axios = Axios
 app.config.globalProperties.$message = ElMessage;
 app.use(ElementPlus)

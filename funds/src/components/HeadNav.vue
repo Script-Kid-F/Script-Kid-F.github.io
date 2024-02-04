@@ -2,7 +2,7 @@
   <header class="head-nav">
     <div class="l-content">
       <img src="../assets/logo.svg" alt="" class="logo" />
-      <span class="title">资金管理后台系统</span>
+      <span class="title">德州游戏平台</span>
     </div>
     <div class="r-content">
       <div class="userinfo">
@@ -53,6 +53,7 @@ const setDialogInfo = (cmdItem) => {
   }
 };
 
+//跳转到个人信息的页面
 const showInfoList = () => {
   router.push("/infoshow");
 };

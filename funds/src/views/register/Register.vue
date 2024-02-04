@@ -37,8 +37,8 @@
             placeholder="请在此输入密码"
           />
         </el-form-item>
-        <el-form-item label="注册类型" prop="identify">
-          <el-select v-model="registerUser.identify" placeholder="请选择身份">
+        <el-form-item label="注册类型" prop="identity">
+          <el-select v-model="registerUser.identity" placeholder="请选择身份">
             <el-option label="超级管理员" value="超级管理员" />
             <el-option label="管理员" value="管理员" />
             <el-option label="员工" value="员工" />
@@ -66,7 +66,7 @@ const registerUser = reactive({
   name: "",
   password: "",
   confirmPassword: "",
-  identify: "",
+  identity: "",
 });
 
 const validatePass2 = (rule, value, callback) => {
@@ -119,8 +119,7 @@ const rules = reactive({
       validator: validatePass2,
       trigger: "blur",
     },
-  ],
-  // identify: [],
+  ]
 });
 
 // 注册事件

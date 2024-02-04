@@ -41,12 +41,12 @@ import { reactive } from "vue";
 const items = reactive([
   {
     icon: "icon-weibiaoti1",
-    name: "资金管理",
+    name: "游戏房间",
     path: "fund",
     children: [
       {
         path: "fundlist",
-        name: "资金流水",
+        name: "游戏一区",
       },
     ],
   },

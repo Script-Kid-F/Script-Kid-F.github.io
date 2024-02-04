@@ -6,11 +6,11 @@ module.exports = defineConfig({
     host: 'localhost',
     port:8080,
     proxy: {
-      '/proxy': {
-        target: "http://localhost:8888/api/",
+      '/api': {    // 拦截以api开头的请求路径
+        target: "http://localhost:8888/api",
         changeOrigin: true,
         pathRewrite: {
-          '^/proxy': '/'
+          '^/api': ''
         }
       }
     }

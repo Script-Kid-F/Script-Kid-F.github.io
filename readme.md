@@ -27,3 +27,7 @@
 
 ### 前端的技术
 1. vue框架
+2. element-plus (vue3专用组件 UI框架)
+
+## 3.启动方式
+    npm run dev

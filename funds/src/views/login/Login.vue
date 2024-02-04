@@ -94,7 +94,7 @@ const submitForm = (loginForm) => {
   loginForm.validate((valid) => {
     if (valid) {
       proxy.$axios
-        .post("/admin/login", loginUser)
+        .post("/users/login", loginUser)
         .then((res) => {
           //   console.log(res);
           // 登录成功 拿到token 后端做了token
